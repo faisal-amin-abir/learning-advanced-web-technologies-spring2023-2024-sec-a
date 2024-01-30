@@ -25,3 +25,26 @@ const func1 = function(name){
 }
 
 //passing a function as parameter
+
+function operationOnNumbers(a, b, myfunc){
+   return myfunc(a, b);
+}
+
+
+function add(a, b){
+    return a + b;
+}
+function sub(a, b){
+    return a - b;
+}
+function Mul(a, b){
+    return a * b;
+}
+
+let resltAddition = operationOnNumbers(1, 14, add);
+let resltSub = operationOnNumbers(1, 14, sub);
+let resltMul = operationOnNumbers(3, 14, Mul);
+
+console.log(resltAddition);
+console.log(resltSub);
+console.log(resltMul);
